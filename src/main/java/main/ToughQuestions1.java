@@ -48,9 +48,6 @@ public class ToughQuestions1 {
       }while(choice<4);
     }
 }
-
-
-
 class Account {
     private int acc_no;
     private int bal;
@@ -75,6 +72,11 @@ class Account {
         System.out.println();
     }
     int debit(Integer debit) {
+    	if(debit>bal) {
+    		System.out.println("Insufficient balance");
+    	}
          return bal = bal - debit;
     }
+    
+    
 }
